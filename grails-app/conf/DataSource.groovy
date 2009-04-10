@@ -14,6 +14,7 @@ environments {
 	development {
 		dataSource {
 			dbCreate = "create-drop" // one of 'create', 'create-drop','update'
+			//url = "jdbc:hsqldb:file:devDB;shutdown=true"
 			url = "jdbc:hsqldb:mem:devDB"
 		}
 	}
@@ -25,8 +26,12 @@ environments {
 	}
 	production {
 		dataSource {
+//			url = "jdbc:hsqldb:file:prodDb;shutdown=true"			
 			dbCreate = "update"
-			url = "jdbc:hsqldb:file:prodDb;shutdown=true"
+			url = "jdbc:mysql://localhost:3306/timesheet"
+			driverClassName = "com.mysql.jdbc.Driver"
+			username = "tsadmin"//after must be tsuser
+			password = "tsadmin"//after must be tsuser			
 		}
 	}
 }

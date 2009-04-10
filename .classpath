@@ -83,5 +83,6 @@
 	<classpathentry kind="var" path="GRAILS_HOME/dist/grails-test-1.1.jar"/>
 	<classpathentry kind="var" path="GRAILS_HOME/dist/grails-web-1.1.jar"/>
 	<classpathentry kind="var" path="GRAILS_HOME/dist/grails-webflow-1.1.jar"/>
+	<classpathentry kind="var" path="GRAILS_HOME/lib/mysql-connector-java-5.1.7-bin.jar"/>
 	<classpathentry kind="output" path="web-app/WEB-INF/classes"/>
 </classpath>
